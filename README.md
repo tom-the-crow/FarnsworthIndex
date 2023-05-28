@@ -52,3 +52,5 @@ This metric does not attempt to quantify your pain. Perhaps a later version! Thi
 After thinking about it, I have come to a conclusion: We can consider Hits, perhaps, value neutral. Perhaps there is a strategy to it. Perhaps the fielders will save him. There is still a chance for an Out. 
 
 You may or may not groan at a hit. It's my index and I do what I want. 
+
+FarnsworthIndex.py does the initial trimming of the dataset
