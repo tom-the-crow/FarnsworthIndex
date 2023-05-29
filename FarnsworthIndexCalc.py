@@ -20,9 +20,9 @@ def calculate_csv(input_file, output_file):
                 bk = float(row['BK'])
                 wp = float(row['WP'])
 
-                good_things = so / ip
-                bad_things = (r + hr + bb + hbp + bk + wp) / ip
-                farnsworth_index = good_things / bad_things
+                good_things = (so / ip) * 100 # this is converting what percentage of times a good thing will happen
+                bad_things = ((r + hr + bb + hbp + bk + wp) / ip) * 100 # also converting to a percentage of how often a bad thing will happen
+                farnsworth_index = ( good_things / bad_things ) * 100 # and converting to a percentage
 
                 row['GOOD_THINGS'] = good_things
                 row['BAD_THINGS'] = bad_things

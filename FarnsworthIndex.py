@@ -12,6 +12,7 @@ def process_csv(input_file, output_file):
             for row in reader:
                 name = row['Name']
                 handed = 'LEFT' if '*' in name else 'RIGHT'
+                name = name.replace('*', '') #this is just cleanup to remove the asterisk, it's bugging me
 
                 processed_row = {
                     'Name': name,
